@@ -133,19 +133,22 @@ h1{
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-size: 14px;
+  
     background-color: #f4f4f4;
     align-items: start;
     min-height: 100vh;
+  
+    font-size: 14px;
   }
   
   .footer {
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
-    color: #2f2f2f;
-    background-color: #fff;
+    color: #F7F7F9;
+    background-color:#2B2D42;
     border-top: 1px solid #e5e5e5;
+    font-weight: bold;
   }
   
   .footer > * {
@@ -173,6 +176,8 @@ h1{
   .nav__title {
     font-weight: 400;
     font-size: 15px;
+    font-weight: bold;
+  
   }
   
   .footer address {
@@ -186,9 +191,9 @@ h1{
     justify-content: center;
     height: 36px;
     max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
+    background-color: #e86a92;
     border-radius: 100px;
-    color: #2f2f2f;
+    color: #F7F7F9;
     line-height: 0;
     margin: 0.6em 0;
     font-size: 1rem;
@@ -239,7 +244,8 @@ h1{
   }
   
   .heart {
-    color: #2f2f2f;
+    color: #ff1b1c;
+    min-height: 5px;
   }
   
   @media screen and (min-width: 24.375em) {
