@@ -12,17 +12,18 @@ background-attachment: fixed;
 background-size: 100% 100%;">
     <header class="header">
         <div class="logo">
-            MotoGlazer
+            <h1>MotoGlazer</h1>
         </div>
 
-        <button>
+        <div class="right-header">
+        <button class="header-components1">
             Developers
         </button>
-        <button>
+        <button class="header-components">
             FAQS
         </button>
-        <button>Add your own bike details</button>
-        <span style="padding-left: 700px;">
+        <!-- <button>Add your own bike details</button> -->
+        <span >
         <a href="login-page"><button class="login">
             <img src="./assets/enter.svg" alt="Login" style=" height: 25px; margin-top: 2px; margin-right: 3px;vertical-align: middle;">
             Login</button>
@@ -32,49 +33,64 @@ background-size: 100% 100%;">
             </button>
         </a>
     </span>
+</div>
     </header>
  
 
+
+
     <div>
-        <h1>Browse Bikes By Brands</h1>
+        <h2>Browse Bikes By Brands</h2>
     </div>
     <div>
         <div class="first-row">
-            Royal Enfield
+            <img class="brand-logo"  src="./assets/logos/royal-enfield.jpg" >
+        <p>Royal Enfield</p>
         </div>
         <div class="first-row">
-            Triumph
+            <img class="brand-logo" src="./assets/logos/triumph.jpg">
+        <p>Triumph</p>
         </div>
         <div class="first-row">
-            BMW
+            <img class="brand-logo" src="./assets/logos/bmw.jpg">
+        <p>BMW</p>
         </div>
         <div class="first-row">
-            Harley Davidson
+            <img class="brand-logo" src="./assets/logos/harleydavidson.jpg">
+        <p>Harley </p>
         </div>
         <div class="first-row">
-            Suzuki
+            <img class="brand-logo" src="./assets/logos/suzuki.jpg">
+        <p>Suzuki</p>
         </div>
-        <br>
+        
         <div class="second-row">
-            Yamaha
+            <img class="brand-logo" src="./assets/logos/yamaha.jpg">
+        <p> Yamaha</p>
         </div>       
         <div class="second-row">
-            Vespa
+            <img class="brand-logo" src="./assets/logos/vespa.jpg">
+        <p>Vespa</p>
         </div>
         <div class="second-row">
-            Bajaj
+            <img class="brand-logo" src="./assets/logos/bajaj.jpg">
+        <p>Bajaj</p>
         </div>
         <div class="third-row">
-            Ducati
+            <img class="brand-logo" src="./assets/logos/ducati.jpg">
+        <p>Ducati</p>
         </div>
         <div class="third-row">
-            Hero 
+            <img class="brand-logo" src="./assets/logos/hero.jpg">
+        <p>Hero </p>
         </div>  
         <div class="third-row">
-            KTM
+            <img class="brand-logo" src="./assets/logos/ktm.jpg">
+        <p>KTM</p>
         </div>
         <div class="third-row">
-            Honda
+            <img class="brand-logo" src="./assets/logos/honda.jpg">
+        <p>Honda</p>
         </div>
     </div>
 
@@ -83,16 +99,94 @@ background-size: 100% 100%;">
 
 
 
-    
-    <footer>
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Something</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            Address<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
         
-        <a href="" alt="about me page">About us</a>
-        <a href="" alt="email address">email id</a>      
-        <a href="" alt="public reviews">Reviews</a>
-        <a href="" alt="technologies">TechStack used</a>
-        <a href="" alt="why " >why this project</a>
- 
-        <h3>© Copyright 2024. All rights reserved.</h3>
-    </footer>
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li> -->
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2024 MotoGlazer. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Engineered with <span class="heart">♥</span>  for Motorbike Enthusiasts </span>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
