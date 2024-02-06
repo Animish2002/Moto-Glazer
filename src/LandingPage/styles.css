@@ -1,3 +1,4 @@
+/* //////////////////////////////////////////Header css//////////////////////////////////// */
 
 .header{
     padding-top: 20px;
@@ -89,37 +90,61 @@ a{
   transition-duration: 0.4s;
   box-shadow: 5px 10px rgb(207, 203, 203);
 }
+
+
+
+/* /////////////////////////////Middle Css//////////////////////////// */
+
+
+
 .first-row,
 .second-row,
 .third-row {
     box-sizing: border-box;
     float: left;
-    width: 20%; /* Adjust the width as needed */
+    width: 30%; /* Adjust the width as needed */
+    height: 10%;
     padding: 55px;
     text-align: center;
     border: 1px solid #ddd; 
     margin: 5px;
 }
 
-.second-row,
-.third-row {
-    clear: none; /* Remove clear property to display side by side */
+.brands-container {
+  text-align: center; 
+  margin: auto; 
+  width: 80%; /* Adjust container width */
+  padding-left: 80px;
+  padding-bottom: 5%;
 }
 
-.brand-logo{
-    
-    max-height: 70%;
-    max-width: 60%;
+.first-row, .second-row, .third-row {
+  display: inline-block; /* Display rows horizontally */
+  margin: 10px; /* Add some space between rows */
+}
+
+.brand-logo {
+  max-height: 50px; /* Adjust max height */
+    max-width: 100px; /* Adjust max width */
     cursor: pointer;
-}
-h1{
-    display: inline;
+    transition: transform 0.2s ease; /* Add transition for smooth hover effect */
 }
 
+.brand-logo:hover {
+  transform: scale(1.6); /* Enlarge the image on hover */
+}
+
+h1 {
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+}
 
 
 
-
+/* ///////////////////Footer css///////////////////////// */
 *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -133,15 +158,14 @@ h1{
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-  
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     align-items: start;
     min-height: 100vh;
-  
     font-size: 14px;
   }
   
   .footer {
+    padding-top: 100px;
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;

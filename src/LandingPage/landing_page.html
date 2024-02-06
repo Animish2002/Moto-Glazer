@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="to.css">
     <title>MotoGlazer-Home</title>
 </head>
 <body style="background-image: url('./assets/ahsan-avi-zdkk3tcSBVs-unsplash.jpg'); background-repeat: no-repeat;
@@ -12,7 +13,8 @@ background-attachment: fixed;
 background-size: 100% 100%;">
     <header class="header">
         <div class="logo">
-            <h1>MotoGlazer</h1>
+           <!-- <img src="./png/logo-no-background.png" alt="logo image" width="100px" height="120px" > -->
+          <h1>MotoGlazer</h1>
         </div>
 
         <div class="right-header">
@@ -35,14 +37,119 @@ background-size: 100% 100%;">
     </span>
 </div>
     </header>
- 
 
+
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 7</div>
+        <img src="./assets/bikes-images/Bike 11.jpg" style="width:80%" class="center">
+        <div class="text">Caption Text</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+        <img src="./assets/bikes-images/Bike 14.jpg" style="width:80%" class="center">
+        <div class="text">Caption Two</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+        <img src="./assets/bikes-images/Bike 5.jpg" style="width:80%" class="center">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img src="./assets/bikes-images/Bike 6.jpg" style="width:80%" class="center">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img src="./assets/bikes-images/Bike 9.jpg" style="width:80%" class="center">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img src="./assets/bikes-images/Bike 3.jpg" style="width:80%" class="center">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img src="./assets/bikes-images/Bike 4.jpg" style="width:80%" class="center">
+          <div class="text">Caption Three</div>
+        </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+
+    </div>
+
+
+    <script>
+      let slideIndex = 0; // Set slideIndex in the global scope
+      
+      // Call showSlides function immediately to display the first image
+      showSlides(slideIndex);
+      
+      // Function to advance slides automatically
+      function autoSlides() {
+        plusSlides(1);
+        setTimeout(autoSlides, 5000); // Change 5000 to the desired interval in milliseconds (e.g., 5000 for 5 seconds)
+      }
+      
+      // Call autoSlides function to start automatic slideshow
+      autoSlides();
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
 
 
     <div>
         <h2>Browse Bikes By Brands</h2>
     </div>
-    <div>
+    <div class="brands-container">
         <div class="first-row">
             <img class="brand-logo"  src="./assets/logos/royal-enfield.jpg" >
         <p>Royal Enfield</p>
