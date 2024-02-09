@@ -4,6 +4,9 @@ import HomePage from './pages/HomePage';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import ForgotPassword from './pages/Auth/ForgotPassword';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
+
 function App() {
   return (
     <Router>
@@ -11,6 +14,8 @@ function App() {
      
 
           <Route path="/" element={<HomePage />} />
+          <Route path='/header' element={<Header/>} />
+          <Route path='/footer' element={<Footer />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
